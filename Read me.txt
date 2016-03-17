@@ -1,0 +1,19 @@
+To run this sample you need to create a database called DatabaseTest (or change the name in the connect.php file).
+Put your getPersons.php and connect.php files in the local server (wamp for example).
+Run the server and be sure it works fine.
+Run the application.
+PS: You can use database.sql file to import a database for your tests.
+
+All server side files are inside serverfiles.rar
+Good luck.
+
+Pour tester cet exemple vous devez créer une base de données intitulée DatabaseTest (ou bien changez le nom
+de la base de données dans le fichier connect.php).
+
+Sauvgarder les fichiers getPersons.php et connect.php dans un serveur local (WAMP par exemple).
+Assurez vous que le serveur est en marche.
+Démarrer l'application.
+PS: Vous pouvez utiliser le fichier database.sql fourni pour importer une base de données pour les tests.
+
+Tous les fichiers du coté serveur sont dans le fichier serverfiles.rar
+Bonne chance.

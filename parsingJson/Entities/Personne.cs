@@ -8,6 +8,7 @@ namespace parsingJson.Entities
 {
     public class Personne
     {
+        public int id { get; set; }
         public String Nom { get; set; }
         public String Prenom { get; set; }
 

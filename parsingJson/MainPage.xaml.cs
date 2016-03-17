@@ -55,10 +55,10 @@ namespace parsingJson
         public  void addtoList(JsonObject Jo)
         {
             Personne p = new Personne();
-            p.Nom = Jo.GetNamedString("Nom");
-            p.Prenom= Jo.GetNamedString("Prenom");
-            p.Age = Convert.ToInt32( Jo.GetNamedNumber("Age"));
-            Debug.WriteLine(Jo.GetNamedNumber("Age"));
+            p.Nom = Jo.GetNamedString("last_name");
+            p.Prenom= Jo.GetNamedString("first_name");
+            p.Age = Convert.ToInt32(Jo.GetNamedString("age"));
+            p.id = Convert.ToInt32(Jo.GetNamedString("id"));
             Personnes.Add(p);
         }
 
@@ -66,7 +66,7 @@ namespace parsingJson
         {
             Personnes.Clear();
             Uri resourceUri;
-            Helpers.TryGetUri("http://localhost/WorkShopParsing/GetPersons.php", out resourceUri);
+            Helpers.TryGetUri("http://localhost/ForGit/getPersons.php", out resourceUri);
 
             try
             {
